@@ -1,0 +1,231 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+:root{
+	/*--primary-color:#edf2fc;
+	--secondary-color:#212121;*/
+	--primary-color:#000106;
+	--secondary-color:#fff;
+}
+body{
+	background:rgba(40,32,67,1);
+
+	height:100%;
+	width:100%;
+	
+}
+
+.container{
+    position:relative;
+	width:calc(100% - 100px);
+	min-height:calc(100vh - 280px);
+	min-height:500px;
+	background:rgba(0,0,0,0.425);
+    box-shadow:0 15px 35px rgba(0,0,0,5);
+	/*background:rgba(255,255,255,0.5);
+    box-shadow:0 15px 35px rgba(0,0,0,0.05);*/
+    border-radius:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:50px;
+    background: blur(10px);
+    top:50px;
+    left:50px;
+}
+
+.sector{
+	position:relative;
+	width:calc(100% - 100px);
+	min-height:calc(100vh - 180px);
+	min-height:100px;
+	background:rgba(0,0,0,0.425);
+    box-shadow:0 15px 35px rgba(0,0,0,5);
+	/*background:rgba(255,255,255,0.5);
+    box-shadow:0 15px 35px rgba(0,0,0,0.05);*/
+    border-radius:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:50px;
+    background: blur(10px);
+    top:-80px;
+    right:-50px;
+
+
+}
+header
+{
+position:absolute;
+top:-0px;
+right:20px;
+left:20px;
+padding: 20px 50px;
+display:flex;
+justify-content:space-between;
+align-items: center;
+/*background: rgba(0,0,0,0.5);
+/*box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+/*background: rgba(255,255,255,0.2);
+box-shadow: 0 15px 35px rgba(0,0,0,0.05);*/
+border-radius:20px;
+background:blur(10px);
+
+/*border:1px solid rgba(255,255,255,0.25);
+border-top:1px solid rgba(255,255,255,0.5);
+border-left:1px solid rgba(255,255,255,0.5);*/
+}
+
+ .logo{
+	color:white;
+	/*color:#ff1493;*/
+	left:-50px;
+	top:-20px;
+position: relative;
+	font-weight:bold;
+	text-decoration: none;
+	font-size: 2em;
+}
+header ul{
+	display:flex;
+}
+header ul li {
+	list-style: none;
+	margin: 0 10px;
+}
+header ul li a{
+	text-decoration: none;
+	font-weight:bold;
+	/*color:#ff1493;*/
+	font-size: 20px;
+	color:white;
+	padding: 8px 20px;
+	border-radius:25px;
+	border-left-width: 20px;
+	border-right-width:30px;
+	border-top-width:40px;
+	border-bottom-width:50px;
+
+}
+header ul li a:hover{
+	box-shadow:0 5px 10px rgba(51,46,89,1);
+
+	background: rgb(51,46,89,1);
+}
+header ul li a.active
+
+ {
+ 	
+ 	box-shadow:0 5px 10px rgba(51,46,89,1);
+
+	background: rgba(51,46,89,1);
+	
+}
+#icon{
+	width:30px;
+	cursor:pointer;
+}
+.content{
+	transform:translateX(-100px);
+	max-width:700px;
+	max-height:100%;
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-radius:20px;
+    background:blur(10px);
+    border:1px solid rgba(255,255,255,0.25);
+    border-top:1px solid rgba(255,255,255,0.5);
+    border-left:1px solid rgba(255,255,255,0.5);
+    padding:40px;
+    padding: 110px;
+    background:rgba(51,46,89,1);
+
+}
+.content h2 {
+	font-size:3em;
+	/*color:#ff1493;*/
+
+	color:var(--secondary-color);
+}
+.content p{
+	font-size:1.2em;
+	/*color:#ff1493;*/
+	color:var(--secondary-color);
+	direction: flex;
+	text-align:left;
+
+}
+.content a {
+	display:inline-block;
+	padding: 5px 20px;
+	background:#000;
+	color:#fff;
+	margin-top:20px
+	font-size:1.2em;
+	border-radius:30px;
+	font-weight:500px;
+	text-decoration:none;
+	/*box-shadow:0 15px 30px rgba(0,0,0,0.1);*/
+	box-shadow:0 15px 30px rgba(0,0,0,0.5);
+}
+.imgBx img{
+	max-width:570px;
+	
+	animation:animate 5s linear infinite; 
+}
+@keyframes animate {
+	0%,100%{
+		transform:translateY(50px);
+	}
+	50%{
+		transform : translateY(100px);
+	}
+}
+.sci{
+	position:absolute;
+	right:-25px;
+	display:flex;
+	flex-direction: row;
+	justify-content:center;
+	align-items:center;
+
+}
+
+.sci li{
+	list-style: none;
+	margin-right: 20px;
+    margin-top: -10px;
+}
+.sci li a{
+	text-decoration:none;
+	width:55px;
+	height:55px;
+	background:var(--primary-color);
+	font-size: 1.8em;
+    /*color:#ff1493;*/
+    color:#000;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+	border-radius: 50%;
+	margin:5px 0;
+	box-shadow:0 5px 10px rgba(0,0,0,0.1);
+
+}
+.sci li a ion-icon {
+	transform:scale(0.9);
+	transition:0.5s; 
+	color:var(--secondary-color);
+
+}
+.sci li:hover a ion-icon  {
+	transform:scale(0.9) rotate(360deg);
+}
+
+footer{
+	position:absolute;
+	bottom:-65px;
+	left:160px;
+	color:#fff;
+}
